@@ -24,5 +24,14 @@ public class PP2Problema10 {
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
-    
+    public static int serieFibonacci(){
+        int numero;
+        int f1;
+        int f2;
+        int i;
+        do{
+            numero = solicitarDatos("numeros a mostrar de la serie Fibonacci ");
+        }while(numero<=1);
+                
+    }
 }
