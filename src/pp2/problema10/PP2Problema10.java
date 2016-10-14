@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package pp2.problema10;
-
+import java.util.*;
 /**
  *
  * @author PC
@@ -16,6 +16,13 @@ public class PP2Problema10 {
      */
     public static void main(String[] args) {
         
+    }
+    public static int solicitarDatos(String d){ //Solicita datos
+        int miDato;
+        Scanner entradaEscaner = new Scanner(System.in);
+        System.out.print("Introduce el dato " + d);
+        miDato= entradaEscaner.nextInt();
+        return miDato;
     }
     
 }
