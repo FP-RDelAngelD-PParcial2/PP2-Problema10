@@ -15,7 +15,7 @@ public class PP2Problema10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        serieFibonacci();
     }
     public static int solicitarDatos(String d){ //Solicita datos
         int miDato;
@@ -24,14 +24,23 @@ public class PP2Problema10 {
         miDato= entradaEscaner.nextInt();
         return miDato;
     }
-    public static int serieFibonacci(){
+    public static void serieFibonacci(){
         int numero;
         int f1;
         int f2;
-        int i;
         do{
             numero = solicitarDatos("numeros a mostrar de la serie Fibonacci ");
-        }while(numero<=1);
-                
+        }while(numero<=1);  
+        
+        System.out.print("Los primeros " + numero + " numeros de la serie Fibonacci son: ");
+        
+       f1=1;
+       f2=2;
+       System.out.print(f1 + "");
+       for(int i = 2;i<=numero;i++){
+           System.out.print(f2 + "");
+           f2 = f1 + f2;
+           f1 = f2 - f1;
+       }
     }
 }
