@@ -31,12 +31,12 @@ public class PP2Problema10 {
         do{
             numero = solicitarDatos("numeros a mostrar de la serie Fibonacci ");//Ingresar datos hasta que sea mas que 1, ya 
                                                                                 //que se debe mostrar minimo un numero
-        }while(numero<=1);         
+        }while(numero<1);         
         System.out.print("Los primeros " + numero + " numeros de la serie Fibonacci son: "); //Se imprime los primeros (numero elegido)
-                                                                                             //
-       f1=1;
+                                                                                             //numeros de la serie Fibonacci son
+       f1=1; 
        f2=1;
-       System.out.print(f1 + "\n");
+       System.out.print(f1 + "\n"); //La serie siempre comienza con 1
        for(int i = 2;i<=numero;i++){
            System.out.print(f2 + "\n");
            f2 = f1 + f2;
