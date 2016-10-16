@@ -37,7 +37,7 @@ public class PP2Problema10 {
        f1=1; 
        f2=1;
        System.out.print(f1 + "\n"); //La serie siempre comienza con 1
-       for(int i = 2;i<=numero;i++){
+       for(int i = 2;i<=numero;i++){//i es igual a 2, mientras i sea menor a el numero introducido, i aumentara 1
            System.out.print(f2 + "\n");
            f2 = f1 + f2;
            f1 = f2 - f1;
